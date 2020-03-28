@@ -1,0 +1,22 @@
+.header-site{
+    background-image: url(../img/img_um.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-site {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-site{
+    background-color: #333333;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

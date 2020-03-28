@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req,res)=>{
-    res.send("ADM panel main page");
+    res.render("admin/index");
 });
 
 module.exports = router
