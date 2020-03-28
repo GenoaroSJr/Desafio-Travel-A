@@ -3,10 +3,10 @@ const express = require('express');
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const app = express();
-const mongoose = require('mongoose');
 const path = require('path');
 
-const admin = require('./routes/admin');
+const mongoose = require('mongoose');
+
 
 //Settings
 //Body Parser
@@ -25,13 +25,33 @@ mongoose.connect('mongodb://localhost/travelA').then(()=>{
 //Public
 app.use(express.static(path.join(__dirname,"public")))
 
+//Import
+require("./models/Register");
+const Register = mongoose.model("register");
+
+const admin = require('./routes/admin');
+
 //Routes
 app.get('/', (req,res)=>{
     res.render('index')
 })
 
-app.get('/success', (req,res)=>{
-    res.send('Success Page');
+app.post('/register/new', (req,res)=>{
+    const newRegister = {
+        name: req.body.name,
+        phone: req.body.phone,
+        origin: req.body.origin,
+        destination: req.body.destination,
+        date_from: req.body.date_from,
+        date_to: req.body.date_to,
+        trav_numb: req.body.trav_numb
+    }
+
+    new Register(newRegister).save().then(() => {
+        console.log("Successfully registered!!");
+    }).catch((err) => {
+        console.log("Error registering!!"+err);
+    })
 })
 
 app.use('/admin', admin);
