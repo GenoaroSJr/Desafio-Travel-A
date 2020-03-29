@@ -1,1 +1,24 @@
-<button class="btn btn-success">JOIN</button>
+<link rel="stylesheet" href="/css/card.css">
+<div class="container">
+    <div class="row">
+{{#each registers}}
+        <div class="col-3">
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <span class="date"> info </span>
+                    <h2>Post One</h2>
+                    <p>texto</p>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <div class="value">4m</div>
+                        <div class="type">asdas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{{else}}
+{{/each}}
+    </div>
+</div>
