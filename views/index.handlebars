@@ -6,7 +6,7 @@
                 <h1 class="text-center">WELCOME</h1>
                 <p class="lead text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <p class="text-center"><a href="#" class="btn btn-danger">CADASTRAR</a></p>
+                <p class="text-center"><a href="#" class="btn btn-danger">TRAVEL</a></p>
             </div>
         </div>
     </div>
@@ -27,39 +27,41 @@
                 <div class="thumbnail body-card pt-4 pb-4">
                     <div class="caption text-center">
                         <form action="/register/new" method="POST">
-                            <input type="text" id="name" name="name" placeholder="Name" class="form-control mt-1">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone" class="form-control mt-1">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control mt-10"
+                                required>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone form: XX-XXXXX-XXXX"
+                                class="form-control mt-1" required pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
                             <div class="row mt-1">
                                 <div class="col-6 pr-0">
                                     <input type="text" id="origin" name="origin" placeholder="Origin"
-                                    class="form-control">
+                                        class="form-control" required>
                                 </div>
                                 <div class="col-6 pl-0">
                                     <input type="text" id="destination" name="destination" placeholder="Destination"
-                                    class="form-control">
+                                        class="form-control" required>
                                 </div>
                             </div>
                             <div class="row mt-1">
                                 <div class="col-6 pr-0">
-                                    <input type="date" id="date_from" name="date_from" placeholder="Date From"
-                                    class="form-control">
+                                    <label class="text-left">Date from:</label>
+                                    <input type="date" id="date_from" name="date_from" class="form-control" required>
                                 </div>
                                 <div class="col-6 pl-0">
-                                    <input type="date" id="date_to" name="date_to" placeholder="Date to"
-                                    class="form-control">
+                                    <label class="text-left">Date to:</label>
+                                    <input type="date" id="date_to" name="date_to" class="form-control" required>
                                 </div>
                             </div>
                             <div class="row mt-1">
                                 <div class="col-6 pr-0">
                                     <input type="number" id="trav_numb" name="trav_numb" placeholder="Travelers number"
-                                class="form-control">
+                                        class="form-control" required min="1">
                                 </div>
                                 <div class="col-6 pl-0">
                                     <button type="submit" class="btn btn-success form-control">Travel</button>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </form>
                     </div>
                 </div>
@@ -79,12 +81,9 @@
 </section>
 
 <section class="footer-site">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p class="lead text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <div class="row m-0">
+            <div class="col-12 p-0">
+            <p>LOTTMMMMm</p>
             </div>
         </div>
-    </div>
 </section>

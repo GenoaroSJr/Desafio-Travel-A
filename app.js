@@ -37,6 +37,7 @@ app.get('/', (req,res)=>{
 })
 
 app.post('/register/new', (req,res)=>{
+
     const newRegister = {
         name: req.body.name,
         phone: req.body.phone,
@@ -52,6 +53,8 @@ app.post('/register/new', (req,res)=>{
     }).catch((err) => {
         console.log("Error registering!!"+err);
     })
+
+    res.render('thanks')
 })
 
 app.use('/admin', admin);

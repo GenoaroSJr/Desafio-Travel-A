@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const Register = new Schema({
     name:{
         type: String,
-        required: true
+        required: true,
     },
     phone:{
         type: String,

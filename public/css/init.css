@@ -17,6 +17,7 @@
 .footer-site{
     background-color: #333333;
     color: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+    height: 20vh;
 }
