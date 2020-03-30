@@ -1,4 +1,4 @@
-# Desafio-Beeleads (Travel A)
+# Challenge - Beeleads (Travel A)
 ## Home page
 ![Home page](https://github.com/GenoaroSJr/Desafio-Travel-A/blob/master/inicial.png)
 
