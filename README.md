@@ -1,9 +1,9 @@
 # Desafio-Beeleads (Travel A)
 ## Home page
-![Home page](https://github.com/GenoaroSJr/desafio-Beeleads/blob/master/inicial.png)
+![Home page](https://github.com/GenoaroSJr/Desafio-Travel-A/blob/master/inicial.png)
 
 ## Thanks page
-![Thanks page](https://github.com/GenoaroSJr/desafio-Beeleads/blob/master/thanks.png)
+![Thanks page](https://github.com/GenoaroSJr/Desafio-Travel-A/blob/master/thanks.png)
 
 ## Install dependencies
 ```sh
