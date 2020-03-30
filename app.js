@@ -29,8 +29,6 @@ app.use(express.static(path.join(__dirname,"public")))
 require("./models/Register");
 const Register = mongoose.model("register");
 
-const admin = require('./routes/admin');
-
 //Routes
 app.get('/', (req,res)=>{
     res.render('index')
@@ -56,8 +54,6 @@ app.post('/register/new', (req,res)=>{
 
     res.render('thanks')
 })
-
-app.use('/admin', admin);
 
 const PORT = 8081;
 app.listen(PORT, () => {
