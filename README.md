@@ -14,7 +14,7 @@ git clone: https://github.com/GenoaroSJr/desafio-Beeleads.git
 cd desafio-Beeleads/
 
 # Install dependencies
-npm start
+npm install
 ```
 
 ## Run project 
@@ -23,10 +23,10 @@ npm start
 mongod
 
 # Start the server
-nodemon app.js
+node app.js
 
 # See the project
-https://localhost:8081
+http://localhost:8081
 ```
 
 ### Note
